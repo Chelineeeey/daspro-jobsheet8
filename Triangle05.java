@@ -5,7 +5,7 @@ public class Triangle05 {
         Scanner sc = new Scanner(System.in); 
         System.out.print("Masukkan nilai n = "); 
         int n = sc.nextInt(); 
-  
+        //Segitiga Normal
         int i = 1; 
         while (i <= n) { 
         
@@ -17,6 +17,19 @@ public class Triangle05 {
             System.out.println();
             i++; 
         } 
+
+        //Segitiga Terbalik
+        i = n;
+        while (i >= 1){
+            int j = 1;
+            while (j <= i){
+                System.out.print("*");
+                j++;
+            }
+            System.out.println();
+            i--;
+        }
+        
         sc.close(); 
     } 
 }
